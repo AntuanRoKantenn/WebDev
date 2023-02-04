@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+body{
+    background: #f0f2f5;
+    min-width: 700px;
+}
+.wrapper{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+
+}
+
+.title-page-container {
+    padding: 80px 0 0 0;
+    width: 45%;
+    height: 70%;
+}
+.title-page-container__title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 55px;
+    color: #1877f2;
+}
+.title-page-container__subtitle {
+    margin: 17px 0 0 0;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    width: auto;
+}
+.reg-form-page-container {
+    width: 45%;
+    height: 70%;
+}
+.form-registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    padding: 17px 0 0 0 ;
+    width: 100%;
+    height: 360px;
+}
+input{
+    border-radius: 6px;
+    font-size: 17px;
+    width: 92%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 16px;
+    vertical-align: middle;
+}
+input:focus{
+    border: 1px solid #1877f2;
+}
+input::placeholder{
+    padding: 0 0px 0 10px;
+}
+.bttn-sign-in {
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 92%;
+    height: 50px;
+    background: #1877f2;
+    border: 1px solid #dddfe2;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 16px;
+
+}
+.forgot-password {
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+.decor-element {
+    width: 92%;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    align-items: center;
+}
+.create-new-acount {
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 60%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+}
+.create-famouse-account {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 0 0 ;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    font-weight: normal;
+}
+.create-famouse-account__link {
+    margin: 0 5px 0 0px;
+    font-weight: 700;
+    color: #1c1e21;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+    width: 100%;
+    background-color: #fff;
+}
+.footer__container{
+    display: flex;
+    margin: 20px 0 0 0;
+    width: 90%;
+    flex-direction: column;
+}
+.language-list {
+    display: flex;
+    align-items: center;
+    color: #8a8d91;
+    gap: 10px;
+}
+.language-list__item {
+}
+.lanhuage-list__button {
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    border: 1px solid #a3a8b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    font-size: 22px;
+    color: #565758;
+    width: 30px;
+}
+.footer__decor-element {
+    margin: 10px 0 ;
+    width: 100%;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    align-items: center;
+}
