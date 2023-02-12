@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+</head>
+<body>
+<script>
+    // first:
+    function checkAge(age) {
+        return (age > 18) ? true : confirm('Parents accepted?');
+    }
+
+    // second:
+    function checkAge2(age) {
+        return (age > 18) || confirm('Parents accepted?');
+    }
+
+    let age = prompt("What is your age?", "");
+    alert(checkAge());
+    alert(checkAge2());
+
+</script>
+</body>
+</html>
