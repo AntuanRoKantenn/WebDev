@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.myDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: lavender;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+
+ul li:hover {
+    background: lightblue;
+}
+
+ul li.checked {
+    background: dimgrey;
+    color: #1c1e21;
+    text-decoration: line-through;
+    font-family: "American Typewriter";
+}
+
+img {
+    position: relative;
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: darkslateblue;
+    color: white;
+}
+
+.header {
+    background-color: darkslateblue;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: "American Typewriter";
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+    font-family: "American Typewriter";
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    font-family: "American Typewriter";
+}
+
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+    /*margin-left: 10px;*/
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+body{
+    background: url("https://images.e-flux-systems.com/283237_588943ecc546db7cc5168e868a7848e7.jpg,1600") repeat;
+    box-shadow: 0 0 5px 2px #282a2d;
+    opacity: 0.9;
+
+}
