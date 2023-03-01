@@ -48,3 +48,9 @@ body{
   font-style: normal;
 }
 
+.like-button{
+  background-color: lavender;
+  align-items: center;
+  font-family: ".SF NS Mono";
+}
+

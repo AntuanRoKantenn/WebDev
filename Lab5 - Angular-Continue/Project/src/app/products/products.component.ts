@@ -9,4 +9,16 @@ import { products } from "../products";
 export class ProductsComponent {
   products = products
 
+  like: number=0;
+
+  likeIncr() {
+    ++this.like;
+  }
+
+  show = true;
+
+  showDet(){
+    this.show = false;
+  }
+
 }

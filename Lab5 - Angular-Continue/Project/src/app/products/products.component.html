@@ -15,9 +15,10 @@
       <li *ngFor="let descr of product.description" class = product-desciption>{{descr.subdescr}}</li>
     </ul>
 
+    <button class="like-button" (click)="likeIncr()">Like! {{like}}</button>
+    <!--<button class="delete-button" (click)="showDet()">Delete</button>-->
+
   </div>
-
-
 
 </div>
 
