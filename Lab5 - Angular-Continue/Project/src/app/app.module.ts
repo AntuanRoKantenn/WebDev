@@ -7,13 +7,19 @@ import { ProductsComponent } from './products/products.component';
 import {RouterModule} from "@angular/router";
 import { GreetingComponent } from './greeting/greeting.component';
 import { SharingComponent } from './sharing/sharing.component';
+import { CategoryListComponent } from './category-list/category-list.component';
+import { ListByCategoryComponent } from './list-by-category/list-by-category.component';
+import { ProductItemComponent } from './product-item/product-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     GreetingComponent,
-    SharingComponent
+    SharingComponent,
+    CategoryListComponent,
+    ListByCategoryComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +27,7 @@ import { SharingComponent } from './sharing/sharing.component';
     RouterModule.forRoot([
       { path: '', component: ProductsComponent },
       { path: 'products/:productId', component: SharingComponent},
+
     ])
   ],
   providers: [],

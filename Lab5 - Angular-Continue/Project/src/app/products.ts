@@ -4,10 +4,11 @@ export interface Product {
   price: number;
   description: string;
 }
-
+//books - 3; goods - 3; food - 1; technique - 3;
 export const products = [
 
   {
+    //category - book
     id: 1,
     name: 'Книга Бeрнетт Ф. Э. Х.: Таинственный сад',
     description: [
@@ -25,6 +26,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hff/hc6/34300229976094/bernett-f-e-h-tainstvennyj-sad-101375607-1.jpg'
   },
   {
+    //category - book
     id: 2,
     name: 'Книга Оруэлл Дж.: 1984',
     description: [
@@ -43,6 +45,7 @@ export const products = [
   },
 
   {
+    // category - goods
     id: 3,
     name: 'Фигура "Ворон на черепе" ',
     price: 13_900,
@@ -61,6 +64,7 @@ export const products = [
   },
 
   {
+    //category - food
     id: 4,
     name: 'Энергетический напиток Red Bull классический 4 шт по 250 мл',
     price: 2378,
@@ -75,6 +79,7 @@ export const products = [
   },
 
   {
+    //category - technique
     id: 5,
     name: 'Кабель Apple USB - Lightning 1 м',
     price: 14_590,
@@ -88,6 +93,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/haf/he9/32024009637918/kabel-apple-usb-type-c-lightning-1-m-40500508-1.jpg'
   },
   {
+    //category - goods
     id: 6,
     name: 'Ароматическая свеча STELLA FRAGRANCE',
     price: 4990,
@@ -101,6 +107,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hcf/h90/65008736665630/aromaticheskaya-svecha-stella-fragrance-89090949-korichnevyi-1-sht-107316946-1.jpg'
   },
   {
+    //category - goods
     id: 7,
     name: 'Сувениры из мраморной крошки фигурка Афродита II',
     price: 30_077,
@@ -115,6 +122,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h94/h98/65276221751326/suveniry-iz-mramornoi-kroshki-figurka-afrodita-ii-31-sm-mramor-107398438-1.jpg'
   },
   {
+    //category - technique
     id: 8,
     name: 'Ноутбук Apple MacBook Air 13 MGN63 серый',
     price: 480_550,
@@ -131,6 +139,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h65/h0f/33125684084766/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-1-Container.jpg'
   },
   {
+    //category - technique
     id: 9,
     name: 'Наушники Marshall Major IV коричневый',
     price: 145_760,
@@ -147,6 +156,7 @@ export const products = [
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h95/h42/49221103910942/marshall-major-iv-koricnevyj-104024603-1.jpg'
   },
   {
+    //category - books
     id: 10,
     name: 'Книга Набоков В. В.: Приглашение на казнь',
     price: 3250,
