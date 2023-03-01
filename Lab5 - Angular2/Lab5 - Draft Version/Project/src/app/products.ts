@@ -1,4 +1,5 @@
 export interface Product {
+  category: string;
   id: number;
   name: string;
   price: number;
@@ -8,9 +9,11 @@ export interface Product {
 export const products = [
 
   {
-    //category - book
+    category: 'book',
     id: 1,
     name: 'Книга Бeрнетт Ф. Э. Х.: Таинственный сад',
+    isLikePressed: false,
+
     description: [
       {subdescr: '-Автор/Редактор Бeрнетт Ф. Э. Х.'},
       {subdescr: '-Издательство Эксмо'},
@@ -22,13 +25,15 @@ export const products = [
     ],
     price: 1895,
     rating: 5.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/bernett-f-e-h-tainstvennyi-sad-101375607/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hff/hc6/34300229976094/bernett-f-e-h-tainstvennyj-sad-101375607-1.jpg'
   },
   {
-    //category - book
+    category: 'book',
     id: 2,
     name: 'Книга Оруэлл Дж.: 1984',
+    isLikePressed: false,
     description: [
       {subdescr: '-Автор/Редактор Оруэлл Дж'},
       {subdescr: '-Издательство ACT'},
@@ -40,14 +45,17 @@ export const products = [
     ],
     price: 1995,
     rating: 5.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/oruell-dzh-1984-105221802/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h81/h34/51390686953502/oruell-dz-1984-105221802-1.jpg'
   },
 
   {
-    // category - goods
+    category: 'goods',
     id: 3,
     name: 'Фигура "Ворон на черепе" ',
+    isLikePressed: false,
+
     price: 13_900,
     description: [
       {subdescr: '-Тип: фигурка'},
@@ -59,14 +67,17 @@ export const products = [
       {subdescr: '-Вес: 1.4 г'}
     ],
     rating: 0.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/lavka-magicheskih-atributov-figurka-figura-voron-na-cherepe-26-sm-gips-107444647/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc4/hd0/65389589069854/figura-voron-na-cherepe-107444647-1.jpg'
   },
 
   {
-    //category - food
+    category: 'food',
     id: 4,
     name: 'Энергетический напиток Red Bull классический 4 шт по 250 мл',
+    isLikePressed: false,
+
     price: 2378,
     description: [
       {subdescr: '-вид напитка: тонизирующий'},
@@ -74,14 +85,17 @@ export const products = [
       {subdescr: '-страна производства: Австрия'}
     ],
     rating: 5.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/red-bull-klassicheskii-4-sht-po-250-ml-100801779/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hc1/h55/32639634964510/red-bull-toniziruusij-lajm-250-ml-100801779-1-Container.jpg'
   },
 
   {
-    //category - technique
+    category: 'technique',
     id: 5,
     name: 'Кабель Apple USB - Lightning 1 м',
+    isLikePressed: false,
+
     price: 14_590,
     description: [
       {subdescr: '-тип: кабель'},
@@ -89,13 +103,16 @@ export const products = [
       {subdescr: '-длина: 1 м'}
     ],
     rating: 1.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/kabel-apple-usb-type-c---lightning-1-m-40500508/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/haf/he9/32024009637918/kabel-apple-usb-type-c-lightning-1-m-40500508-1.jpg'
   },
   {
-    //category - goods
+    category: 'goods',
     id: 6,
     name: 'Ароматическая свеча STELLA FRAGRANCE',
+    isLikePressed: false,
+
     price: 4990,
     description: [
       {subdescr: '-назначение: ароматическая свеча'},
@@ -103,13 +120,16 @@ export const products = [
       {subdescr: '-цвет: коричневый'}
     ],
     rating: 5.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/aromaticheskaja-svecha-stella-fragrance-89090949-korichnevyi-1-sht-107316946/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hcf/h90/65008736665630/aromaticheskaya-svecha-stella-fragrance-89090949-korichnevyi-1-sht-107316946-1.jpg'
   },
   {
-    //category - goods
+    categor: 'goods',
     id: 7,
     name: 'Сувениры из мраморной крошки фигурка Афродита II',
+    isLikePressed: false,
+
     price: 30_077,
     description: [
       {subdescr: '-тип: фигурка'},
@@ -118,13 +138,16 @@ export const products = [
       {subdescr: '-высота: 31 см'}
     ],
     rating: 3.1,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/suveniry-iz-mramornoi-kroshki-figurka-afrodita-ii-31-sm-mramor-107398438/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h94/h98/65276221751326/suveniry-iz-mramornoi-kroshki-figurka-afrodita-ii-31-sm-mramor-107398438-1.jpg'
   },
   {
-    //category - technique
+    category: 'technique',
     id: 8,
     name: 'Ноутбук Apple MacBook Air 13 MGN63 серый',
+    isLikePressed: false,
+
     price: 480_550,
     description: [
       {subdescr: '-диагональ экрана: 13.3 дюйм'},
@@ -135,13 +158,16 @@ export const products = [
       {subdescr: '-общий объем накопителей: 256 ГБ'}
     ],
     rating: 4.2,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-mgn63-seryi-100797845/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h65/h0f/33125684084766/apple-macbook-air-2020-13-3-mgn63-seryj-100797845-1-Container.jpg'
   },
   {
-    //category - technique
+    category: 'technique',
     id: 9,
     name: 'Наушники Marshall Major IV коричневый',
+    isLikePressed: false,
+
     price: 145_760,
     description: [
       {subdescr: '-тип: гарнитура'} ,
@@ -152,13 +178,16 @@ export const products = [
       {subdescr: '-система активного шумоподавления: Нет'}
     ],
     rating: 4.6,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/marshall-major-iv-korichnevyi-104024603/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h95/h42/49221103910942/marshall-major-iv-koricnevyj-104024603-1.jpg'
   },
   {
-    //category - books
+    category: 'books',
     id: 10,
     name: 'Книга Набоков В. В.: Приглашение на казнь',
+    isLikePressed: false,
+
     price: 3250,
     description: [
       {subdescr: '-жанр: всемирная классика'},
@@ -167,6 +196,7 @@ export const products = [
       {subdescr: '-переплет: твердый переплет'}
     ],
     rating: 4.0,
+    like: 3,
     link: 'https://kaspi.kz/shop/p/nabokov-v-v-priglashenie-na-kazn--103331351/?c=750000000#!/item',
     image: 'https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf6/h75/48036447780894/nabokov-v-v-priglasenie-na-kazn-103331351-1.jpg'
   },

@@ -1,6 +1,8 @@
 <h3 class = "product-list">List of products available</h3>
+<app-category-list (childEvent)="setCategorisedList($event)"
+                   (getBackItems)="getDefaultList()"> </app-category-list>
 
-<div class = "product-container" *ngFor="let product of products">
+<div class = "product-container" *ngFor="let product of items">
   <div class = "row">
     <img class = "product-image" [src] = "product.image" width = "200px">
   </div>
@@ -14,12 +16,8 @@
     <ul>
       <li *ngFor="let descr of product.description" class = product-desciption>{{descr.subdescr}}</li>
     </ul>
-
-    <button class="like-button" (click)="likeIncr()">Like! {{like}}</button>
-    <!--<button class="delete-button" (click)="showDet()">Delete</button>-->
-
+    <p> Likes: <span class = "product-likes">{{product.like}}</span> <button class = "like" (click)="likePressed(product.id)">Like</button></p>
+    <button (click) = "remove(product.id)">Remove</button>
   </div>
 
 </div>
-
-
